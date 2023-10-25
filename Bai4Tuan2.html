@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Đăng ký</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+			width: 50%;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			margin-bottom: 20px;
+    }
+   td,  th {
+			border: 1px solid #ddd;
+			padding: 2px;
+			text-align: center;
+		}
+        input{
+            width: 90%;
+            height: 100%;
+        }
+</style>
+<body>
+  <form>
+    <table>
+      <tr>
+        <td>Full Name:</td>
+        <td><input type="text" name="fullname"></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="text" name="email"></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td>Confirm Password:</td>
+        <td><input type="password" name="confirm_password"></td>
+      </tr>
+      <tr>
+        <td>Phone Number:</td>
+        <td><input type="password" name="phone_number"></td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><input type="text" name="address"></td>
+      </tr>
+      <tr>
+        <td>City:</td>
+        <td><input style="width: 40%;height: 40%;"type="text" name="city"> State <input style="width: 40%;height: 40%;"type="text" name="state"><td>
+         
+            </td>
+        </td>
+      </tr>
+      <tr><td> Zip/Postal Code:</td>
+        <td><input type="text" name="zip"></td></tr>
+      <tr>
+        <td>Country:</td>
+        <td>
+          <select name="country">
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Birthday:</td>
+        <td><input type="date" name="birthday"></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+        <select name="country">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </td>
+      </tr>
+      <tr>
+        <td>Starting Date:</td>
+        <td><input type="date" name="starting_date"></td>
+      </tr>
+      <tr>
+        <td>Comments:</td>
+        <td><textarea name="comments"></textarea></td>
+      </tr>
+    </table>
+    <input type="submit"style="width: 50%;" value="Submit">
+  </form>
+</body>
+</html>

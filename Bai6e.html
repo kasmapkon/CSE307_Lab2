@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+</head>
+<style>
+    body{
+        border: 1px solid black; 
+        width: fit-content;
+    }
+    form {
+        border: 1px solid black;
+        padding: 20px;
+        margin: 20px;
+        width: 400px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .col-label {
+        flex: 1;
+    }
+
+    .col-input {
+        flex: 2;
+        margin-left: 10px;
+    }
+</style>
+<body>
+    <h1>Thông tin cá nhân</h1>
+    <form action="process.php" method="post">
+        <div class="row">
+            <div class="col-label">
+                <label for="name">Họ và tên:</label>
+            </div>
+            <div class="col-input">
+                <input type="text" id="name" name="name" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-label">
+                <label for="dob">Ngày sinh:</label>
+            </div>
+            <div class="col-input">
+                <select id="day" name="day" required>
+                    <option value="">Ngày</option>
+                </select>
+                <select id="month" name="month" required>
+                    <option value="">Tháng</option>
+                </select>
+                <input type="text" id="year" name="year" placeholder="Năm" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-label">
+                <label>Giới tính:</label>
+            </div>
+            <div class="col-input">
+                <input type="checkbox" id="male" name="gender" value="Nam">
+                <label for="male">Nam</label>
+                <input type="checkbox" id="female" name="gender" value="Nữ">
+                <label for="female">Nữ</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-label">
+                <label for="address">Địa chỉ:</label>
+            </div>
+            <div class="col-input">
+                <input type="text" id="address" name="address" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-label">
+                <label for="phone">Điện thoại:</label>
+            </div>
+            <div class="col-input">
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-label">
+                <label for="email">Email:</label>
+            </div>
+            <div class="col-input">
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+    </form>
+    <h1>Đăng ký thành viên</h1>
+    <form action="registration_process.php" method="post">
+        <div class="row">
+            <div class="col-label">
+                <label for="username">Tên đăng nhập:</label>
+            </div>
+            <div class="col-input">
+                <input type="text" id="username" name="username" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-label">
+                <label for="password">Mật khẩu:</label>
+            </div>
+            <div class="col-input">
+                <input type="password" id="password" name="password" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-label">
+                <label for="confirm_password">Nhập lại mật khẩu:</label>
+            </div>
+            <div class="col-input">
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+        </div>
+
+      
+
+        <div class="row">
+            <div class="col-label"></div>
+            <div class="col-input">
+                <input type="submit" value="Đăng ký">
+                <input type="submit" value="Hủy">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

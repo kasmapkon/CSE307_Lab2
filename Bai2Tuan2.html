@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        table {
+            width:50%;
+            height:50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #07f1f1;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #07f1f1;
+        }
+        td:hover {
+            background-color: #670afc;
+        }
+        button{
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4">Calculator</th>
+        </tr>
+        <tr style="width: 80%;height: 80px;">
+            <td  colspan="4"><input  style="width: 100%;height: 100%;font-family: Arial, sans-serif; font-size: 60px;" type="text" id="display" disabled></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber(7)">7</button></td>
+            <td><button onclick="appendNumber(8)">8</button></td>
+            <td><button onclick="appendNumber(9)">9</button></td>
+            <td><button onclick="appendOperator('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber(4)">4</button></td>
+            <td><button onclick="appendNumber(5)">5</button></td>
+            <td><button onclick="appendNumber(6)">6</button></td>
+            <td><button onclick="appendOperator('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber(1)">1</button></td>
+            <td><button onclick="appendNumber(2)">2</button></td>
+            <td><button onclick="appendNumber(3)">3</button></td>
+            <td><button onclick="appendOperator('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="appendNumber(0)">0</button></td>
+            <td><button onclick="appendOperator('.')">.</button></td>
+            <td><button onclick="calculate()">=</button></td>
+            <td><button onclick="appendOperator('/')">/</button></td>
+        </tr>
+    </table>
+
+    <script>
+        function appendNumber(number) {
+            document.getElementById('display').value += number;
+        }
+
+        function appendOperator(operator) {
+            document.getElementById('display').value += operator;
+        }
+
+        function calculate() {
+            const expression = document.getElementById('display').value;
+            try {
+                const result = eval(expression);
+                document.getElementById('display').value = result;
+            } catch (error) {
+                alert('Error');
+            }
+        }
+
+       
+    </script>
+</body>
+</html>

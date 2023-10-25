@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thông tin sinh viên</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+		table td, table th {
+			border: 1px solid #ddd;
+			padding: 8px;
+			text-align: center;
+		}
+		table th {
+			background-color: #f2f2f2;
+		}
+		.pagination {
+			display: inline-block;
+		}
+		.pagination a {
+			color: black;
+			float: left;
+			padding: 8px 16px;
+			text-decoration: none;
+			border: 1px solid #ddd;
+			margin: 0 4px;
+		}
+		.pagination a.active {
+			background-color: #4CAF50;
+			color: white;
+			border: 1px solid #4CAF50;
+		}
+		.pagination a:hover:not(.active) {
+			background-color: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<h1>University grid</h1>
+	<table>
+		<thead>
+            <tr ><td rowspan="2">Oder</td>
+            <td colspan="6">Personal Info</td>
+            <td colspan="5">University Marks</td></tr>
+			<tr>
+				<th>Name</th>
+				<th>Date Of Birth</th>
+				<th>Address</th>
+				<th>Email</th>
+				<th>Phone Number</th>
+                <th>English</th>
+                <th>Math</th>
+                <th>Biology</th>
+                <th>Physics</th>
+                <th>Total</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>001</td>
+				<td>Nguyễn Văn A</td>
+				<td>01/01/1999</td>
+				<td>Hà Nội</td>
+				<td>nguyenvana@example.com</td>
+				<td>0987654321</td>
+                <td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+                <td>10</td>
+			</tr>
+            <tr>
+				<td>002</td>
+				<td>Nguyễn Văn B</td>
+				<td>01/01/1999</td>
+				<td>Hà Nội</td>
+				<td>nguyenvana@example.com</td>
+				<td>0987654321</td>
+                <td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+                <td>10</td>
+			</tr>
+            <tr>
+				<td>003</td>
+				<td>Nguyễn Văn C</td>
+				<td>01/01/1999</td>
+				<td>Hà Nội</td>
+				<td>nguyenvana@example.com</td>
+				<td>0987654321</td>
+                <td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+                <td>10</td>
+			</tr>
+            <tr>
+				<td>001</td>
+				<td>Nguyễn Văn D</td>
+				<td>01/01/1999</td>
+				<td>Hà Nội</td>
+				<td>nguyenvana@example.com</td>
+				<td>0987654321</td>
+                <td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+                <td>10</td>
+			</tr>
+            <tr>
+				<td>002</td>
+				<td>Nguyễn Văn E</td>
+				<td>01/01/1999</td>
+				<td>Hà Nội</td>
+				<td>nguyenvana@example.com</td>
+				<td>0987654321</td>
+                <td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+                <td>10</td>
+			</tr>
+            <tr>
+				<td>003</td>
+				<td>Nguyễn Văn F</td>
+				<td>01/01/1999</td>
+				<td>Hà Nội</td>
+				<td>nguyenvana@example.com</td>
+				<td>0987654321</td>
+                <td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+                <td>10</td>
+			</tr>
+            <tr>
+				<td>001</td>
+				<td>Nguyễn Văn G</td>
+				<td>01/01/1999</td>
+				<td>Hà Nội</td>
+				<td>nguyenvana@example.com</td>
+				<td>0987654321</td>
+                <td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+                <td>10</td>
+			</tr>
+            <tr>
+				<td>002</td>
+				<td>Nguyễn Văn H</td>
+				<td>01/01/1999</td>
+				<td>Hà Nội</td>
+				<td>nguyenvana@example.com</td>
+				<td>0987654321</td>
+                <td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+                <td>10</td>
+			</tr>
+            <tr>
+				<td>003</td>
+				<td>Nguyễn Văn K</td>
+				<td>01/01/1999</td>
+				<td>Hà Nội</td>
+				<td>nguyenvana@example.com</td>
+				<td>0987654321</td>
+                <td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+                <td>10</td>
+			</tr>
+			
+		</tbody>
+	</table>
+	<div class="pagination">
+		<a href="#">&laquo;</a>
+		<a href="file:///F:/VsCode/Bai3Tuan2.html" >1</a>
+		<a href="file:///F:/VsCode/Bai3Tuan2.1.html">2</a>
+		<a href="file:///F:/VsCode/Bai3Tuan2.2.html">3</a>
+        <a href="file:///F:/VsCode/Bai3Tuan2.3.html"class="active">4</a>
+        <a href="file:///F:/VsCode/Bai3Tuan2.4.html">5</a>
+        <a href="file:///F:/VsCode/Bai3Tuan2.5.html">»</a>
+        </div>
+       </body>
+</html>

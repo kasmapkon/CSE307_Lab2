@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bảng HTML</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 10px;
+      font-size: 16px;
+      border: 5px solid rgb(190, 190, 190);
+    }
+
+    tr {
+      border: 5px solid rgb(190, 190, 190);
+    }
+
+    .center-text {
+      text-align: center;
+      border: none
+    }
+    .no-border {
+      border: none;
+    }
+    strong{
+      font-size: 36px;
+    }
+    a{
+      font-size: 20px;
+    }
+    img{
+      width: 300px; 
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <table class="no-border" style="width:60%; height: 1px;margin-left: auto; margin-right: auto;">
+    <tr class="no-border">
+      <td colspan="2" class="center-text"><strong >Fresh Fruit</strong></td>
+    </tr>
+    <tr class="no-border">
+      <td class="no-border">
+        <a><strong style="font-size:20px">It has long been known that a diet that includes at least a few servings of fresh fruit every day will help keep you healthy, fit, and trim. </strong></a>
+      </td>
+      <td class="no-border">
+        <img src="C:\Users\CNTT\Downloads\watermelon-2367029__480.jpg">
+      </td>
+    </tr>
+    <tr class="no-border">
+      <td class="no-border">
+        <table>
+          <tr>
+            <td colspan="3">Title goes here</td>
+            <td>A</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td rowspan="3">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+            <td>G</td>
+          </tr>
+          <tr>
+            <td>H</td>
+            <td colspan="2">I</td>
+            <td rowspan="2">J</td>
+          </tr>
+          <tr>
+            <td>K</td>
+            <td>L</td>
+            <td>M</td>
+          </tr>
+          <tr>
+            <td>N</td>
+            <td colspan="4">O</td>
+          </tr>
+        </table>
+      </td>
+      <td class="no-border"></td>
+    </tr>
+  </table>
+</body>
+</html>
